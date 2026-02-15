@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Practice Tracker"
+            android:textStyle="bold"
+            android:textSize="24sp"
+            android:textColor="@color/text"
+            android:fontFamily="sans-serif-medium" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Учебная версия: вход без проверки данных"
+            android:textColor="@color/muted"
+            android:textSize="14sp"
+            android:layout_marginTop="6dp" />
+
+        <EditText
+            android:id="@+id/etEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:layout_marginTop="16dp"
+            android:padding="12dp" />
+
+        <EditText
+            android:id="@+id/etPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Пароль"
+            android:inputType="textPassword"
+            android:layout_marginTop="10dp"
+            android:padding="12dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Роль"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:textColor="@color/text"
+            android:layout_marginTop="18dp" />
+
+        <RadioGroup
+            android:id="@+id/rgRole"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp">
+
+            <RadioButton
+                android:id="@+id/rbIntern"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Стажёр"
+                android:checked="true" />
+
+            <RadioButton
+                android:id="@+id/rbMentor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ментор" />
+
+            <RadioButton
+                android:id="@+id/rbCurator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Куратор" />
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Войти"
+            android:layout_marginTop="18dp"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/primary"
+            android:padding="12dp"
+            android:textAllCaps="false" />
+
+    </LinearLayout>
+</ScrollView>

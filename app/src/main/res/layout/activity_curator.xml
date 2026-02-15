@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Куратор — Контроль"
+            android:textStyle="bold"
+            android:textSize="22sp"
+            android:textColor="@color/text"
+            android:fontFamily="sans-serif-medium" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Стажёров: 12 • На проверке: 7 • Просрочено: 2"
+            android:textColor="@color/muted"
+            android:textSize="14sp"
+            android:layout_marginTop="6dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Действия"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:textColor="@color/text"
+            android:layout_marginTop="18dp" />
+
+        <Button
+            android:id="@+id/btnLateTasks"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Просроченные задания"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/primary"
+            android:padding="12dp"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/btnNoDocs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Не загружены документы"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/primary"
+            android:padding="12dp"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/btnNotify"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Отправить напоминание"
+            android:layout_marginTop="16dp"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/primary_dark"
+            android:padding="12dp"
+            android:textAllCaps="false" />
+
+    </LinearLayout>
+</ScrollView>
